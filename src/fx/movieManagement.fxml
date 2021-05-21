@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="804.0" style="-fx-background-color: #FF8133;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.MovieController">
+    <children>
+        <TableView fx:id="tblMovies" layoutX="26.0" layoutY="65.0" onMouseClicked="#tableClick" prefHeight="271.0" prefWidth="418.0">
+            <columns>
+                <TableColumn fx:id="colTitle" prefWidth="201.0" text="Title" />
+                <TableColumn fx:id="colDirector" prefWidth="126.0" text="Director" />
+                <TableColumn fx:id="colYear" prefWidth="90.0" text="Release Year" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtTitle" layoutX="545.0" layoutY="65.0" />
+        <TextField fx:id="txtDirector" layoutX="545.0" layoutY="134.0" />
+        <TextField fx:id="txtYear" layoutX="545.0" layoutY="209.0" />
+        <Label layoutX="606.0" layoutY="33.0" text="Title" textFill="GOLD" />
+        <Label layoutX="603.0" layoutY="109.0" text="Director" textFill="GOLD" />
+        <Label layoutX="584.0" layoutY="177.0" text="Release Year" textFill="GOLD" />
+        <Button fx:id="btnAdd" layoutX="468.0" layoutY="271.0" mnemonicParsing="false" onAction="#addMovie" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #197FFF;" text="Add Movie" textFill="GOLD" />
+        <Button fx:id="btnEdit" layoutX="586.0" layoutY="271.0" mnemonicParsing="false" onAction="#editMovie" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #197FFF;" text="Edit Movie" textFill="GOLD" />
+        <Button fx:id="btnDelete" layoutX="696.0" layoutY="271.0" mnemonicParsing="false" onAction="#deleteMovie" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #197FFF;" text="Delete Movie" textFill="GOLD" />
+        <Button fx:id="btnClear" layoutX="581.0" layoutY="325.0" mnemonicParsing="false" onAction="#clearSelection" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #197FFF;" text="Clear Selection" textFill="GOLD" />
+    </children>
+</AnchorPane>

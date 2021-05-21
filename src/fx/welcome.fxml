@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="366.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/11.0.1" style="-fx-background-color: #FF8133;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.WelcomeController">
+
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="141.0" layoutY="52.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="/assets/img/LP_5_15.png"/>
+   </ImageView>
+   <ImageView fitHeight="303.0" fitWidth="360.0" layoutX="302.0" layoutY="-24.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="/assets/img/MM.png"/>
+   </ImageView>
+   <Button fx:id="btnMusic" layoutX="93.0" layoutY="238.0" mnemonicParsing="false" onAction="#btnMusic"
+           prefHeight="66.0" prefWidth="145.0" style="-fx-background-color: #197FFF;" textFill="GOLD" text="Manage Music"/>
+   <Button fx:id="btnMovies" layoutX="400.0" layoutY="238.0" mnemonicParsing="false" onAction="#btnMovies"
+           prefHeight="66.0" prefWidth="145.0" style="-fx-background-color: #197FFF;" textFill="GOLD" text="Manage Movies"/>
+</AnchorPane>
